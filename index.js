@@ -12,7 +12,7 @@ router.get('/', async ctx => {
 
 router.get('/arango', async ctx => {
   const arangoSettings = {
-    hosts: 'http://localhost:8529',
+    hosts: process.env.ARANGO_HOSTS || 'http://localhost:8529',
     user: '',
     password: '',
     useCache: true,

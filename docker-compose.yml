@@ -1,0 +1,26 @@
+version: '3.7'
+
+services:
+  arango:
+    image: brendanwheble/arango-test-data:1.0.0
+    networks:
+      - test
+    environment:
+      - ARANGO_NO_AUTH=1
+    ports:
+      - "8529:8529"
+
+  basic:
+    image: basic
+    environment:
+      - ARANGO_HOSTS=http://arango:8529
+    networks:
+      - test
+    ports:
+      - "3000:3000"
+    depends_on:
+      - arango
+    command: node -r esm ./index.js
+
+networks:
+  test:

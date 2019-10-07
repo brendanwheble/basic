@@ -13,12 +13,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "esm": "^3.2.25",
     "koa": "^2.8.2",
     "koa-router": "^7.4.0",
     "pb-service-utils": "^0.6.0"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "esm": "^3.2.25"
+    "eslint": "^5.16.0"
   }
 }

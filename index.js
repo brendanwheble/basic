@@ -1,9 +1,13 @@
-const http = require('http');
+import Koa from 'koa';
+import KoaRouter from 'koa-router';
 
-const handler = (req, res) => {
-  res.end('HELLO WORLD AGAIN');
-};
+const app = new Koa();
 
-const server = http.createServer(handler);
+const router = new KoaRouter();
+router.get('/', async ctx => {
+  ctx.body = 'HELLO FROM KOA';
+});
+app.use(router.routes());
 
-server.listen(3000);
+app.listen(3000);
+

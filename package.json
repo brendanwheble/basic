@@ -12,7 +12,11 @@
   ],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "koa": "^2.8.2",
+    "koa-router": "^7.4.0",
+    "pb-service-utils": "^0.6.0"
+  },
   "devDependencies": {
     "eslint": "^5.16.0",
     "esm": "^3.2.25"

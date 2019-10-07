@@ -1,0 +1,20 @@
+{
+  "name": "basic",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r esm ./index.js "
+  },
+  "keywords": [
+    "test",
+    "project"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "esm": "^3.2.25"
+  }
+}
